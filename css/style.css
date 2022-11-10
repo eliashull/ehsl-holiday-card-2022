@@ -1,9 +1,15 @@
 /***** BASICS *****/
 			
-body, html {
-	height: 100%;
+html {
+	/*height: 100%;*/
 	background: #eeeeee;
 	scroll-behavior: smooth;
+}
+
+body {	
+	margin-right: 9px;
+	font-size: calc(16px + (24 - 16) * ((100vw - 768px) / (1600 - 768))); 
+	@media screen and (max-width: 768px) { body { font-size: 16px; } }@media screen and (min-width: 1600px) { body { font-size: 26px; } };
 }
 
 
@@ -19,32 +25,33 @@ h1 {
 	color: #eeeeee;
 	font-family: 'Big Shoulders Inline Text', cursive;
 	font-weight: 800;
-	font-size: 12vh;
-	margin: 10px 10px 20px 10px;
+	font-size: 4em;
+	margin: 10px 5px 20px 5px;
 }
 
 h2, h3 {
 	color: #eeeeee;
 	font-family: 'Big Shoulders Inline Text', cursive;
 	font-weight: 800;
-	font-size: 5rem;
+	font-size: 2.75em;
 }
 
 h4 {
 	color: #eeeeee;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: 1.75em;
 }
 
 h5 {
 	color: #da212d;
 	font-family: 'Big Shoulders Inline Text', cursive;
 	font-weight: 800;	
+	font-size: 2rem;
 }
 
 p{
-	font-size: 2rem;
+	font-size: 1.3em;
 	font-family: 'Raleway', sans-serif;
 	color: #eeeeee;
 	margin: 10px 10px 20px 10px;
@@ -70,14 +77,16 @@ strong {
 
 .card-introduction {
 	text-align: center;
-	position: absolute;
-	top: 50%;
+	position: relative;
+	margin: auto;
+	/*top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 	padding: 40px;
 	border: solid #da212d 12px;
 	background-color: #571616;
 	opacity: .9;
+	max-width: 30em;
 }
 
 .card-content {
@@ -89,7 +98,7 @@ strong {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	max-width: 50em;
+	max-width: 30em;
 	opacity: .9;
 }
 
@@ -102,13 +111,13 @@ strong {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	max-width: 50em;
+	max-width: 30em;
 	opacity: .9;
 }
 
 p.quote {
 	font-family: 'Yellowtail', cursive;
-	font-size: 3rem;
+	font-size: 2em;
 	text-align: center;
 	line-height: 1.25;
 	color: #da212d;
@@ -116,7 +125,7 @@ p.quote {
 
 p.quote-signature {
 	font-family: "Raleway", sans-serif;
-	font-size: 2rem;
+	font-size: 1em;
 	text-align: center;
 	line-height: 1;
 	color: #da212d;
@@ -159,7 +168,7 @@ img.rounded-circle {
 }
 
 .footer-row {
-	background-color: #111111;
+	background-color: #571616;
 	display: flex;
 	flex-direction: column;
 }
@@ -183,12 +192,12 @@ p.footer-social-media {
 }
 
 img.holly-img-left {
-	max-width: 5rem;
+	max-width: 3rem;
 	margin-right: 20px;
 }
 
 img.holly-img-right {
-	max-width: 5rem;
+	max-width: 3rem;
 	margin-left: 20px;
 }
 
